@@ -89,6 +89,18 @@ print(id(x))
 x = False
 print(id(x))
 print("Id of x changed")
+print("---------------------------------")
 
 x = False
+print(id(x))
+x = x or True
+print(id(x))
+print("Id of x changed")
+print("---------------------------------")
+
+#Hence it is observed boolean is also a immutable data type
+
+#Tuple
+
+
 
