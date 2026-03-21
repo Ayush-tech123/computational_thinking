@@ -102,5 +102,73 @@ print("---------------------------------")
 
 #Tuple
 
+x = (1, 2, 3)
+print(id(x))
+x = (4, 5, 6)
+print(id(x))
+print("Id of x changed")
+print("---------------------------------")
 
+#Hence tuple is also a immutable data type
 
+#List
+
+x = [1, 2, 3, 4, 5]
+y = [6, 7, 8, 9, 10]
+print(id(x))
+x.append(y)
+print(id(x))
+print("Id of x is same")
+print("---------------------------------")
+
+x = [2, 3, 1, 5, 4]
+print(id(x))
+x.sort()
+print(id(x))
+print("Id of x is same")
+print("---------------------------------")
+
+x = [95, 96, 97, 98, 98, 100]
+print(id(x))
+x[-2] = 99
+print(id(x))
+print("Id of x is same")
+print("---------------------------------")
+
+x = [1, 2, 3]
+print(id(x))
+x = [1, 2, 3, 4, 5]
+print(id(x))
+print("Id of x changed because we used = operation which created a brand new list")
+print("---------------------------------")
+
+#Hence list is an mutable data type
+
+#Dictionary
+
+x = {"ayush" : 100}
+print(id(x))
+x["rahul"] = 50
+print(id(x))
+print("Id of x is same")
+print("---------------------------------")
+
+x['aditya'] = 30
+print(id(x))
+x.pop('aditya')
+print(id(x))
+print("Id of x is same")
+print("---------------------------------")
+
+#Hence dictionary is also an mutable data type
+
+#Set
+
+x = {1, 2, 3}
+print(id(x))
+x.add(4)
+print(id(x))
+print("Id of x is same")
+print("---------------------------------")
+
+#Hence set is also a mutable data type
